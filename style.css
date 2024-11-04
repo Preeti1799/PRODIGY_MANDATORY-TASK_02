@@ -1,0 +1,85 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+  }
+  
+  .stopwatch-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #003580;
+    margin-bottom: 10px;
+  }
+  
+  .display {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #startStopBtn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  #resetBtn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  #lapBtn {
+    background-color: #003580;
+    color: white;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  .laps {
+    list-style-type: none;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+  
+  .laps li {
+    padding: 5px 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    color: #333;
+  }
+  
